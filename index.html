@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20 Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>20 Questions</h1>
+      <p class="subtitle">Think of an object. I'll try to guess it in 20 questions.</p>
+
+      <section id="game-panel" class="panel">
+        <div class="meta">
+          <span id="question-count">Question 1 / 20</span>
+        </div>
+
+        <h2 id="question-text">Ready?</h2>
+
+        <div id="answer-buttons" class="answers">
+          <button data-answer="yes">Yes</button>
+          <button data-answer="no">No</button>
+          <button data-answer="maybe">Maybe</button>
+          <button data-answer="unknown">Don't know</button>
+        </div>
+
+        <div id="guess-panel" class="guess hidden">
+          <p id="guess-text"></p>
+          <div class="guess-actions">
+            <button id="guess-correct">Correct</button>
+            <button id="guess-wrong">Nope, keep trying</button>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="start-btn">Start game</button>
+          <button id="reset-btn" class="secondary">Reset</button>
+        </div>
+
+        <div id="status" class="status"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
